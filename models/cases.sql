@@ -13,7 +13,7 @@ select
     json_extract_scalar(_airbyte_data, "$['total_confirmed']") as total_confirmed,
     json_extract_scalar(_airbyte_data, "$['total_recovered']") as total_recovered,
     _airbyte_emitted_at
-from `daring-phoenix-365309`.toyset._airbyte_raw_demo_dataset as table_alias
+from `daring-phoenix-365309`.toyset._airbyte_raw_covid_data as table_alias
 -- demo_dataset
 ),  __dbt__CTE__demo_dataset_ab2 as (
 

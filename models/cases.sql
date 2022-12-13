@@ -1,12 +1,3 @@
-/* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.demo_dataset"} */
-
-
-  create or replace table `daring-phoenix-365309`.toyset.`demo_dataset`
-  
-  
-  OPTIONS()
-  as (
-    
 with __dbt__CTE__demo_dataset_ab1 as (
 
 -- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
@@ -107,4 +98,3 @@ select
     _airbyte_demo_dataset_hashid
 from __dbt__CTE__demo_dataset_ab3
 -- demo_dataset from `daring-phoenix-365309`.toyset._airbyte_raw_demo_dataset
-  );
